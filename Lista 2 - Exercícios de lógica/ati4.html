@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+<body>
+    <h1>Dados três valores A, B e C, construa um programa em Javascript, que mostre na tela os valores de forma descendente (do maior para o menor). </h1>
+    <script>
+        let A = parseFloat(prompt("Digite o valor de A:"))
+        let B = parseFloat(prompt("Digite o valor de B:"))
+        let C = parseFloat(prompt("Digite o valor de C:"))
+
+        let maior, meio, menor;
+
+        /* O && serve para verificar se duas condições são verdadeiras ao mesmo tempo tempo */
+
+        if(A >= B && A >= C){
+            maior = A;
+            meio = (B >= C) ? B : C;
+            menor = (B >= C) ? C : B;
+
+        }else if (B >= A && B >= C){
+            maior = B;
+            meio = (A >= C) ? A : C;
+            menor = (A >= C) ? C : A;
+        }else{
+            maior = C;
+            meio = (A >= B) ? A : B;
+            menor = (A >= B) ? B : A;
+        }
+
+        document.write("Valores em ordem decrescente: " + maior + ", " + meio + ", " + menor)
+        
+    </script>
+</body>
+</html>

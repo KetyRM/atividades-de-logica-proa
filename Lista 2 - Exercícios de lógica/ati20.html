@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Escreva um programa que leia 20 números do usuário e exiba quantos números são maiores do que 8. </h1>
+
+    <script>
+        let contador = 0
+
+        for(let i=1; i<=20; i++){
+          let numeros= parseInt(prompt("Digite o núemro "  + i + "º: "))
+            
+        if(numeros >8 ){
+            contador++ 
+            document.write("Os Números que são maiores que oito: "  +  numeros  +  "<br>")
+           
+        }
+    }
+
+    document.write("Quantidade de números maiores que oito: " + contador + "<br>")
+    </script>
+</body>
+</html>

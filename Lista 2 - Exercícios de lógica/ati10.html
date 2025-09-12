@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade 10</title>
+</head>
+<body>
+    <h1>Informar um saldo e mostrar na tela o saldo com reajuste de 1.5%. </h1>
+
+    <script>
+        let saldo = parseFloat(prompt("Digite o valor do saldo R$: "))
+
+        let valor = saldo  * 0.015
+
+        let final = saldo + valor
+
+      
+        document.write("Seu saldo é de: R$ " + saldo + "<br>")
+        
+        if(saldo > 0){
+            document.write("O valor do seu saldo com 1.5% é de R$: "+  final)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+</head>
+<body>
+    <h1>Leia o nome e a idade de 10 pessoas e exiba o nome da pessoa mais nova. </h1>
+    
+     <script>
+        let nome_do_mais_novo = prompt("Digite o nome da 1ª pessoa:");
+        let idade_do_mais_novo = parseInt(prompt("Digite a idade de " + nome_do_mais_novo + ":"));
+
+        for (let i = 2; i <= 10; i++) {
+        let nome = prompt("Digite o nome da " + i + "ª pessoa:");
+        let idade = parseInt(prompt("Digite a idade de " + nome + ":"));
+
+          if (idade < idade_do_mais_novo) {
+            idade_do_mais_novo = idade;
+            nome_do_mais_novo = nome;
+        }
+    }
+    document.write("A pessoa mais nova é " + nome_do_mais_novo + " com " + idade_do_mais_novo + " anos.");
+</script>
+
+</body>
+</html>

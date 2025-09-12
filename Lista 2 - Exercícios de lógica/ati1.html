@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <h1>Criar um programa em Java, que informe a quantidade total de calorias de uma refeição a partir do usuário que deverá informar o prato, a sobremesa e a bebida (veja a tabela a seguir).  </h1>
+
+    <script>
+        let prato = parseInt(prompt("Digite os pratos que você consegumiu  (1-Vegetariano, 2-Peixe, 3-Frango, 4-Carne): "))
+        let sobremesas = parseFloat(prompt("Digite as sobremesas que você consegumiu (1-Abacaxi, 2-Sorvete diet, 3-Mousse diet, 4-Mousse chocolate): "))
+        let bebidas = parseFloat(prompt("Digite as bebidas que você consegumiu (1-Chá, 2-Suco laranja, 3-Suco melão, 4-Refrigerante diet): "))
+
+
+        let calo_pratos = 0
+        let calo_sobremesas = 0
+        let calo_bebidas = 0
+
+        if(prato == 1){
+            calo_pratos = 180
+        }else if(prato == 2){
+            calo_pratos = 230
+        }else if(prato == 3){
+            calo_pratos = 250
+        }else if(prato ==4){
+            calo_pratos = 350
+        }
+
+
+        if (sobremesas == 1){
+            calo_sobremesas = 75
+        }else if(sobremesas == 2){
+            calo_sobremesas = 110
+        } else if(sobremesas == 3){
+            calo_sobremesas = 170
+        }else if(sobremesas == 4){
+            calo_sobremesas = 200
+        }
+
+        if (bebidas == 1){
+            calo_bebidas = 20
+        }else if(bebidas == 2){
+            calo_bebidas = 70
+        }else if(bebidas == 3){
+            calo_bebidas = 100
+        }else if(bebidas == 4){
+            calo_bebidas = 65
+        }
+
+        let total = calo_pratos+calo_sobremesas+calo_bebidas
+
+        document.write("O total de calorias consumidas foram: " + total)
+
+    </script>
+</body>
+</html>
