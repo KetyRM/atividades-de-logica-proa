@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 17</title>
+</head>
+<body>
+
+    <h1>Escreva um programa que leia a idade de uma pessoa e exiba uma
+     mensagem indicando se ela é criança, adolescente, adulto ou idoso.</h1>
+
+     <script>
+        let idade = parseInt(prompt("Digite sua idade: "))
+
+        if( idade <= 10){
+            document.write("Você é criança")
+        } else if(idade <= 17){
+            document.write("Você é adolescente")
+        } else if (idade <= 49){
+            document.write("Você é adulto")
+        }else{
+            document.write("Você é idoso")
+        }
+     </script>
+    
+</body>
+</html>

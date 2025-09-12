@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 34</title>
+</head>
+<body>
+    <h1>Faça um programa que leia a idade de uma pessoa e exiba se ela pode ou não votar. O voto é obrigatório para pessoas entre 18 e 70 anos, e facultativo para pessoas entre 16 e 18 anos e com mais de 70 anos.</h1>
+
+    <script>
+        let idade = parseInt(prompt("Descubra se você pdoe votar: "))
+
+
+        if(idade < 16){
+            document.write("Você não pode votar!")
+        }else if(idade >= 16 && idade < 18){
+            document.write("Seu voto é facultativo!")
+        }else if (idade >= 18 && idade <= 70){
+            document.write("Seu voto é obrigatório!")
+        }else if (idade > 70){
+            document.write(" Seu voto é facultativo!")
+        } 
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade  21</title>
+</head>
+<body>
+    <h1>Crie um programa que leia a idade de um grupo de pessoas e exiba quantas são menores de idade e quantas são maiores de idade.</h1>
+
+
+    <script>
+        let maiores = "" //Guardar os números numa string vazia
+        let menores = ""
+
+        let pessoas_total= 5  
+
+        for (let i = 1; i <= 5; i++){
+            let idades = parseInt(prompt("Digite a idade da pessoa" + i + ":"))
+
+            if ( idades <18 ){
+                menores += idades + " "
+            }else{ 
+                maiores += idades +  " "
+            }
+        }
+
+        document.write("Pessoas menores de idade: " + menores + "<br>")
+        document.write("Pessoas maiores de idade: " + maiores)
+
+
+    </script>
+</body>
+</html>

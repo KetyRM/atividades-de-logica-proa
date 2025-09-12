@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <h1>Faça um programa que receba o salário de um funcionário e exiba o valor do seu bônus. Se o salário for maior que R$ 2000, o bônus é de 10%, caso contrário, é de 5%.</h1>
+
+    <script>
+        let salario = parseFloat(prompt("Digite seu salário:"))
+
+        let bonus = salario * 0.10
+
+        let bo_par = salario * 0.05
+
+        let sal_bonus = salario + bonus
+
+        let sal_medio = salario + bo_par
+
+        if (salario > 2000){
+            document.write("Seu salário mais o bonus de 10% é:R$ " + sal_bonus)
+        }else{
+            document.write("Seu salario mais o bonus de 5%:R$ " + sal_medio)
+        }
+
+
+        
+    </script>
+</body>
+</html>

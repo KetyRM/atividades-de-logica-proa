@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atividade29</title>
+</head>
+<body>
+    <h1>Escreva um programa que leia o nome e a nota de um aluno e exiba sua situação na disciplina. Se a nota for maior ou igual a 7, o aluno está aprovado. Caso contrário, está em recuperação.</h1>
+
+    <script>
+        let nome = prompt("Escreva seu nome: ")
+        let nota = parseInt(prompt("Digite sua nota em número inteiro: "))
+
+        if(nota <7){
+            document.write("O aluno(a)" + nome + " está de recuperação na disciplina " + "pois sua nota é: " + nota)
+        }else if(nota >=7 ){
+            document.write("O aluno(a)" + nome + " está aprovado na disciplina " + "pois sua nota é: " + nota)
+        }
+
+    </script>
+</body>
+</html>
