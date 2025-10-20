@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+</head>
+
+<body>
+    <h1>Faça um programa que receba três notas de um aluno (cada nota
+        de 0 a 10) e calcule a média ponderada considerando pesos 2, 3 e
+        5 para as notas, respectivamente.</h1>
+
+    <script>
+        let nota1 = parseFloat(prompt("Digite sua primeira nota: "))
+        let nota2 = parseFloat(prompt("Digite sua segunda nota: "))
+        let nota3 = parseFloat(prompt("Digite sua terceira nota: "))
+
+        let peso1 = 2;
+        let peso2 = 3;
+        let peso3 = 5;
+
+        let media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
+
+        if(media >= 7){
+            document.write("Aprovado! Média: " + media.toFixed(2))
+        }
+        else{
+            document.write("Reprovado! Média: " + media.toFixed(2))
+         }
+
+    
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+
+<body>
+    <h1>Escreva um programa que leia o preço de um produto e a
+        quantidade comprada, e calcule o valor total a ser pago com
+        desconto de 10% se a quantidade for maior que 10 unidades.</h1>
+    <script>
+        let quantidade = parseFloat(prompt("Digite quantos produtos foram comprados: "))
+        let preço =  parseInt(prompt("Digite o valor do preço dos produtos: "))
+
+        let total = quantidade * preço
+        let desconto = total * 0.10
+        let valor_com_desconto = total - desconto
+
+        if( quantidade >=10){
+            document.write("Valor do produto com desconto:  " + valor_com_desconto + "<br>")
+        }else{
+            document.write("Produto sem desconto, quantidade de produto inferior a dez:" + total + "<br>")
+        }
+    </script>
+</body>
+
+</html>
