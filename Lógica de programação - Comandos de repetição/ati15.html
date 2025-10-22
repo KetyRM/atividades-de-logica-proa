@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 15</title>
+</head>
+
+<body>
+    <h1>Crie um programa que leia o nome e a idade de várias pessoas usando o loop "while" até que o nome "fim" seja
+        informado. Ao final, exiba a média das idades.</h1>
+    <script>
+        let idades = 0
+        let contador = 0
+        let nome = prompt("Digite o nome (ou 'fim' para parar): ")
+
+        while (nome != "fim") {
+            let idade = parseInt(prompt("Digite a idade:"))
+            idades = idades + idade
+            contador = contador + 1
+
+            nome = prompt("Digite o nome (ou 'fim' para parar): ")
+        }
+
+        if (contador > 0) {
+            let media = idades / contador;
+            document.write("A média das idades é: " + media)
+        } else {
+            document.write("Nenhuma idade foi informada.")
+        }
+    </script>
+</body>
+
+</html>

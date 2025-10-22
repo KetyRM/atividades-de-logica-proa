@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 28</title>
+</head>
+<body>
+    <h1>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".</h1>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro: "))
+        let copia = numero
+
+        let divisor = 1
+        while (copia / divisor >= 10){
+            divisor *= 10
+        }
+
+        document.write("Os dígitos do número " + numero + " são:<br>")
+
+        do {
+            let digito = Math.floor(copia / divisor)
+            document.write(digito + "<br>")
+            copia = copia % divisor
+            divisor = Math.floor(divisor / 10)
+        } while (divisor >= 1)
+    </script>
+</body>
+
+</html>

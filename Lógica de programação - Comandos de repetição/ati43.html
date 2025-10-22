@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 43</title>
+</head>
+<body>
+    <h1>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.</h1>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro: "))
+
+            let temp = numero
+            let divisor = 1
+            while (temp >= 10){
+                temp = Math.floor(temp / 10)
+                divisor = divisor * 10
+            }
+
+            for (; divisor >= 1; divisor = Math.floor(divisor / 10)){
+                let digito = Math.floor(numero / divisor)
+                document.write(digito + "<br>")
+                numero = numero % divisor
+            }
+    </script>
+</body>
+</html>

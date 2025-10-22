@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+</head>
+
+<body>
+    <h1>Faça um programa que leia 5 números inteiros usando o loop "do-while" e exiba a média aritmética dos valores
+        lidos.</h1>
+    <script>
+        let contador = 0
+        let soma = 0
+        const totalNumeros = 5
+
+        do{
+            let numero = parseInt(prompt("Digite um número inteiro: "))
+            soma = soma + numero
+            contador++
+        } while (contador < totalNumeros)
+
+        let media = soma / totalNumeros
+        document.write("A média dos 5 números é: " + media)
+    </script>
+</body>
+
+</html>
