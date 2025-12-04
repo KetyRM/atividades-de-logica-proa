@@ -9,9 +9,17 @@
 
 <body>
     <h1>Crie um programa que leia o salário de um funcionário e calcule
-o novo salário com um aumento de 15%.</h1>
+        o novo salário com um aumento de 15%.</h1>
+
     <script>
+        let salario = parseFloat(prompt("Digite o salário do funcionário:"));
+
+        let novosalario = salario * 1.15;
+
+        document.write("Salário antigo: R$ " + salario + "<br>");
+        document.write("Novo salário com aumento de 15%: R$ " + novosalario);
     </script>
+
 </body>
 
 </html>

@@ -10,7 +10,21 @@
 <body>
     <h1>Faça um programa que receba três notas de um aluno e exiba
 se ele foi aprovado ou reprovado. A média para aprovação é 7.</h1>
+
     <script>
+        let nota1 = parseFloat(prompt("Digite a primeira nota:"))
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"))
+        let nota3 = parseFloat(prompt("Digite a terceira nota:"))
+
+        let media = (nota1 + nota2 + nota3) / 3
+
+        document.write("Média do aluno: " + media.toFixed(2) + "<br>")
+
+        if (media >= 7) {
+            document.write("O aluno foi APROVADO.");
+        } else {
+            document.write("O aluno foi REPROVADO.");
+        }
     </script>
 </body>
 

@@ -10,7 +10,14 @@
 <body>
     <h1>Crie um programa que leia o peso e a altura de uma pessoa e
 exiba o seu Índice de Massa Corporal (IMC)</h1>
+
     <script>
+        let peso = parseFloat(prompt("Digite seu peso:"));
+        let altura = parseFloat(prompt("Digite sua altura:"));
+
+        let imc = peso / (altura * altura);
+
+        document.write("Seu IMC é: " + imc);
     </script>
 </body>
 
